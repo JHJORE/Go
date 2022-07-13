@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="background" maxHeight="900.0" maxWidth="1400.0" minHeight="900.0" minWidth="1400.0" prefHeight="900.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="go.GoController">
+   <children>
+      <Pane layoutX="903.0" layoutY="-6.0" prefHeight="900.0" prefWidth="497.0" AnchorPane.bottomAnchor="6.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-6.0">
+         <children>
+            <Button layoutX="227.0" layoutY="806.0" mnemonicParsing="false" onAction="#handlePass" prefHeight="39.0" prefWidth="70.0" text="Pass" />
+            <Button layoutX="404.0" layoutY="830.0" mnemonicParsing="false" onAction="#loadGame" prefHeight="30.0" prefWidth="58.0" text="Load" />
+            <Button layoutX="404.0" layoutY="791.0" mnemonicParsing="false" onAction="#saveGame" prefHeight="30.0" prefWidth="58.0" text="Save" />
+           
+            <Pane layoutX="24.0" layoutY="14.0" prefHeight="114.0" prefWidth="455.0" style="-fx-background-color: BLACK;">
+               <children>
+                  <Text fill="WHITE" layoutX="168.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GO">
+                     <font>
+                        <Font size="83.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Button layoutX="96.0" layoutY="806.0" mnemonicParsing="false" onAction="#handleReset" prefHeight="39.0" prefWidth="70.0" text="Reset" />
+            <TextArea fx:id="scoreText" layoutX="24.0" layoutY="144.0" prefHeight="251.0" prefWidth="455.0">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </TextArea>
+         </children>
+      </Pane>
+      <Pane fx:id="background" prefHeight="425.0" prefWidth="364.0" />
+   </children>
+</AnchorPane>
